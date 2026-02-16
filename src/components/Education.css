@@ -1,0 +1,123 @@
+.education {
+    background: transparent;
+}
+
+.education-content {
+    max-width: 900px;
+    margin: var(--spacing-xl) auto 0;
+}
+
+.education-card {
+    padding: var(--spacing-xl);
+    text-align: center;
+    margin-bottom: var(--spacing-2xl);
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.education-icon {
+    font-size: 4rem;
+    margin-bottom: var(--spacing-md);
+    filter: drop-shadow(0 0 30px rgba(102, 126, 234, 0.4));
+}
+
+.education-card h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: var(--spacing-sm);
+    background: var(--primary-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.education-card h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-sm);
+}
+
+.education-location {
+    color: var(--text-secondary);
+    margin-bottom: 0.25rem;
+}
+
+.education-status {
+    color: var(--text-accent);
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.education-highlight {
+    background: var(--glass-white);
+    border: 1px solid var(--glass-border);
+    padding: var(--spacing-md);
+    border-radius: var(--radius-md);
+    margin-top: var(--spacing-md);
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.education-highlight strong {
+    color: var(--text-primary);
+}
+
+.certifications {
+    margin-top: var(--spacing-2xl);
+}
+
+.cert-title {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+    background: var(--secondary-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.cert-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.cert-card {
+    padding: var(--spacing-lg);
+    text-align: center;
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.cert-icon {
+    font-size: 3rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.cert-card h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: var(--spacing-sm);
+    color: var(--text-primary);
+}
+
+.cert-card p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+    .education-card {
+        padding: var(--spacing-lg);
+    }
+
+    .education-card h3 {
+        font-size: 1.5rem;
+    }
+
+    .cert-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
